@@ -5,14 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap.min (3).css">
 </head>
 <body>
-    <input type="text" id="num1">
-    <input type="text" id="num2">
-    <button onclick="maths('add')">add</button>
-    <button onclick="maths('sub')">sub</button>
-    <button onclick="maths('mul')">mul</button>
-    <button onclick="maths('div')">div</button>
+    <div class="container">
+<div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+    <input type="text" class="form-control mt-4" placeholder="Enter First Number" id="num1">
+    <input type="text"class="form-control mt-3" placeholder="Enter Second Number" id="num2">
+  
+    <button class="btn btn-primary mt-4 " onclick="maths('add')">Addition</button>
+    <button class="btn btn-primary mt-4" onclick="maths('sub')">Substraction</button>
+    <button class="btn btn-primary mt-4" onclick="maths('mul')">Multiplication</button>
+    <button class="btn btn-primary mt-4" onclick="maths('div')">Division</button>
+</div>
+    <div class="col-md-3"></div>
+</div>
+    </div>
+ 
    <script src="./app.js"></script> 
 </body>
 </html>
